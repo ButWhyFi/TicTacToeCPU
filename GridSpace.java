@@ -68,7 +68,7 @@ public class GridSpace extends GridPane {
     static boolean multipleChoices = true; // A boolean that is only set to false when there is only
                                            // one square that is considered the best move. Upon
                                            // setting it to false, methods that check for which
-                                           // square is disabled until it is reset to true on the
+                                           // square is best are skipped until it is reset to true on the
                                            // next turn.
 
     static boolean gameOver = false;
