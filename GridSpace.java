@@ -201,7 +201,7 @@ public class GridSpace extends GridPane {
         identifyValueAndSum();
       }
 
-      // Hardcoding the CPU to play the corner method
+      // Manually coding the CPU to play the corner method as the CPU cannot play it without going its principles
       if (turn == 2 && cpuSymbol == 'x' && charGrid[1][1] == playerSymbol) {
         int[][] temp = new int[4][2];
         if (threeEmptyCorners(temp)) {
@@ -209,12 +209,12 @@ public class GridSpace extends GridPane {
           findOpposingCorner();
         }
       }
-      // Hardcoding the CPU to detect corner method
+      // Manually coding the CPU to counter the corner method as the CPU cannot counter it without going against its principles
       else if (turn == 3 && detectCornerMethod() && cpuSymbol == 'o') {
         identifyEmptySpaces();
         prioritizeOrthagonals();
 
-      } else { // Normal circumstances
+      } else { // Normal circumstances when the corner method is not involved
         prioritizeDiagonals();
       }
 
