@@ -13,6 +13,8 @@ import javafx.stage.Stage;
 
 /**
  * @author: Johnny Zheng
+ * 
+ * Main class for the Tic Tac Toe program. Sets up the window.
  */
 
 public class TTT extends Application {
